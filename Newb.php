@@ -1,10 +1,10 @@
 <?php
 /* 
- * @package Newbie
+ *Template Name: Newbie
 */    
 get_header(); ?>   
  
-
+ 
 
 
 
