@@ -1,0 +1,125 @@
+//UP:
+
+// Small devices (landscape phones, 576px and up)
+@media only screen and (min-width: 576px) { }
+
+// Medium devices (tablets, 768px and up)
+@media only screen and (min-width: 768px) { }
+
+// Large devices (desktops, 992px and up)
+@media only screen and (min-width: 992px) { 
+    #mainNav {
+        .nav-body-mob {
+            display: none !important;
+        }
+    }
+     
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media only screen and (min-width: 1200px) { 
+    #mainNav{
+        #nav-body {            
+            ul {
+                li {
+                    float: left;
+                    margin: 8px 20px 0 20px;
+                    
+                    a {
+                        color: $prim;
+                        display: block;
+                    }
+                    a:hover {
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+//DOWN:
+
+    //iPhones
+@media only screen and (max-width: 400px) { 
+    #mainNav {
+        .icon {
+            p {
+                font-size: 13px;
+            }
+        }
+    }
+    //Register
+    #cont-input {
+        max-width: 300;
+    }
+}
+// Small devices 
+@media only screen and (max-width: 575px) { }
+
+// Medium devices (tablets)
+@media only screen and (max-width: 767px) { }
+
+// Large devices 
+@media only screen and (max-width: 991px) { 
+    //Nav
+    #mainNav{
+        #nav-body {            
+            display: none !important;
+        }
+    }    
+    
+    //Sections
+        //services:
+    #services {
+        .serv-item {
+            margin-left: 0px;
+            .desc{
+                h4,p {
+                    margin-left: 5px;
+                }   
+            }
+        }
+    }    
+    
+        //Team
+    #team {
+        .team-card {
+            margin: 40px 0px 40px 0px;
+            min-height: 200px;
+            
+            .inner-center-block {
+                img {
+                    margin-top: -15%;
+                }
+            }
+            
+            .team-card-body {
+                padding: 0 10% 10% 10%;
+            }
+        }
+    }
+}
+
+// Extra large devices 
+@media only screen and (max-width: 1199px) { 
+    #mainNav{
+        #nav-body {            
+            ul {
+                li {
+                    float: left;
+                    margin: 8px 10px 0 10px;
+                    
+                    a {
+                        color: $prim;
+                        display: block;
+                    }
+                    a:hover {
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+}
