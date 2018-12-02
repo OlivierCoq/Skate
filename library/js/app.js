@@ -2,8 +2,11 @@ $(document).ready(function(){
     
     
     /*Scrolling*/
-      // Add smooth scrolling to all (nav)links
-    $('a.scroll').on('click', function(ev) {
+      // Add smooth scrolling to specific links
+    
+ if ($('a').parent().hasClass('.scroll')) {
+     
+     $('a').on('click', function(ev) {
        ev.preventDefault();
         
             var target = this.hash,
@@ -20,7 +23,9 @@ $(document).ready(function(){
             $("#scrollToTop").show();
         } else {
              $("#scrollToTop").hide();
-        }
+        } 
     }); 
+     
+ }
     
 });    
