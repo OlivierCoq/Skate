@@ -1,0 +1,11 @@
+/*
+Theme Name: SkillsTest
+Version: 1.0
+Author: Olivier Coq
+Description: 24 Data Skills Test theme. Bootstrap included for production speed. style.min.css is minified using Grunt's cssmin.
+
+*/
+
+@import url('https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css');
+
+/*My custom CSS file in the dist folder, and is enqueued using wp_enqueue_style() via the functions.php file. This is here only because WordPress files can't upload without a style.css file in the theme's root.*/

@@ -1,0 +1,33 @@
+#signUp {
+    
+    #first,
+    #last,
+    #email,
+    #birthday,
+    #phone {
+        width: 100%;
+        
+        border: none;
+        border-bottom: 3px solid black;
+    }
+    
+    #first:focus,
+    #last:focus,
+    #email:focus,
+    #birthday:focus,
+    #phone:focus {
+        outline: none;
+    }
+}
+
+#signUpSubmit {
+    
+    border: 3px solid black;
+    background-color: transparent;
+    transition: .3s;
+}
+
+#signUpSubmit:hover {
+    transform: scale(1.1);
+    cursor: pointer !important;
+}

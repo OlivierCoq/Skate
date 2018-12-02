@@ -2,6 +2,7 @@
 @import "bootstrap/scss/bootstrap";  
 
 @import "partials/mixins";
+@import "partials/fonts";
 @import "partials/variables";
 @import "partials/hierarchy";
  
@@ -9,10 +10,23 @@
 @import "partials/base";
 
 /*Components*/
-@import "components/nav";
+@import "components/UX/nav";
+@import "components/UX/scrollBtn";
+@import "components/UX/validation";
+@import "components/UI/separator";
+@import "components/forms"; 
 
 /*Sections*/
+@import "sections/header";
+@import "sections/hero";
+@import "sections/why";
+@import "sections/locations";
 @import "sections/footer";
 
-/*Breakpoints*/  
-@import "partials/breakpoints";
+/*Pages*/
+@import "pages/junior/junior";
+@import "pages/junior/graphic";
+@import "pages/junior/form";
+
+/*Breakpoints*/   
+@import "partials/breakpoints"; 

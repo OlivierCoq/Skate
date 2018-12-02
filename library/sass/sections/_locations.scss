@@ -1,0 +1,33 @@
+#locations {
+    padding: 10vh 0 10vh 0;
+    
+    .cont-copy {
+        width: 75%;
+        padding: 10vh 0 10vh 0;
+        
+        h1 {
+            color: black;
+            font-size: 55px;
+            text-align: left;
+        }
+        
+        p {
+            color: black;
+            font-size: 15px;
+            text-align: left;
+            
+        }
+    }
+    
+    .city {
+        img {
+            border: 10px solid white;
+            width: 100%;
+        }  
+        
+    }
+    
+    .addr {
+       text-align: center;
+    } 
+}

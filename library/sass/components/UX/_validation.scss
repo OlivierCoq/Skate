@@ -1,0 +1,19 @@
+    /*Validation*/
+.invalid {
+	color: #ff4444;
+	display: inline !important;
+	margin-top: 3px;
+	padding-top: 5px;
+	font-family: $body-font;
+    font-size: 16px;
+}
+
+
+.valid {
+    color: white;
+	display: inline !important; 
+	margin-top: 3px; 
+	padding-top: 5px;
+	font-family: $body-font;
+    font-size: 16px; 
+}

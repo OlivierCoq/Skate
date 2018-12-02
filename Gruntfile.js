@@ -12,9 +12,14 @@ const sass = require('node-sass');
 
         dist: {
         src: [
-          'library/js/libs/jquery-3.3.1.min.js',
-          'library/js/libs/*.js',
-          'library/js/*.js'
+            'library/js/libs/jquery-3.3.1.min.js',
+            'library/js/libs/jquery.forms.js',
+            'library/js/libs/jquery.validate.min.js',
+            'library/js/libs/additional-methods.min.js',
+            'library/js/libs/bootstrap.min.js',
+            'library/js/libs/waypoints/*.js',    
+            'library/js/libs/*.js',
+            'library/js/*.js'
         ],
         dest: 'dist/js/production.js'
       }
@@ -34,7 +39,7 @@ const sass = require('node-sass');
           files: [{
             expand: true, // Enable dynamic expansion
             cwd: 'library/img/', // source images (not compressed)
-            src: ["*.{png,jpg,gif}"], // Actual patterns to match
+            src: ["*.{png,jpg,jpeg,gif}"], // Actual patterns to match
             dest: 'dist/img/' // Destination of compressed files
           }]
         },

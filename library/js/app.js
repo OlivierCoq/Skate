@@ -1,1 +1,26 @@
-  
+$(document).ready(function(){
+    
+    
+    /*Scrolling*/
+      // Add smooth scrolling to all (nav)links
+    $('a.scroll').on('click', function(ev) {
+       ev.preventDefault();
+        
+            var target = this.hash,
+                $target = $(target);
+        
+            $('html, body').animate({
+                'scrollTop': $target.offset().top/* -70 //minus height of the navbar*/
+            }, 900); 
+        });
+     
+        /*Scroll to Top Button*/
+    $(window).scroll(function(){
+        if ($(window).scrollTop() > 450) {
+            $("#scrollToTop").show();
+        } else {
+             $("#scrollToTop").hide();
+        }
+    }); 
+    
+});    

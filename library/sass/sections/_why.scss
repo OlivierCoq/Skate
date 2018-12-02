@@ -1,0 +1,29 @@
+#why {
+    min-height: 100vh;
+    background-image: url(../../dist/img/family.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0,0,0,.63);
+    
+   
+    
+    .cont-copy {
+        width: 75%;
+        padding: 33vh 0 33vh 0;
+        
+        h1 {
+            color: white;
+            font-size: 55px;
+            text-align: left;
+        }
+        
+        p {
+            color: white;
+            font-size: 15px;
+            text-align: left;
+            
+        }
+    }
+}  
