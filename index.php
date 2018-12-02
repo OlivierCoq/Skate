@@ -2,9 +2,8 @@
 /* 
  * @package Skate-Theme
 */    
-<?php get_header(); ?>  --> 
-
-<!--< include "dev/header.php"; ?> -->
+<?php get_header(); ?>  
+ 
 <!--Hero-->
 <section id="home" class="container-fluid">
     <div class="row align-items-center content-wrap">
@@ -18,6 +17,13 @@
                     <li><a class="scroll" href="#locations">Locations</a></li>
                     <li><a href="#">Jr. Skaters</a></li>
                 </ul>-->
+                <?php 
+                
+                    $args = array(
+                        'theme_location' => 'primary'
+                    );
+                
+                    wp_nav_menu(  $args); ?>
             </nav>
             <a href="#why" class="scroll"><i class="fas fa-chevron-down down-btn"></i></a>
         </div>
@@ -46,7 +52,7 @@
                 </div>
             </div>
             <div class="city col-sm-12 col-md-4 col-lg-4">
-                <img src="dist/img/city-silo.png">
+                <img src="<?php bloginfo('template_url'); ?>/dist/img/city-silo.png">
                 <div class="addr">
                     <span class="loc"><strong>DopeStyle Skatepark</strong></span>
                     <address>
@@ -57,7 +63,7 @@
                 </div>
             </div>
             <div class="city col-sm-12 col-md-4 col-lg-4">
-                <img src="dist/img/city-silo.png">
+                <img src="<?php bloginfo('template_url'); ?>/dist/img/city-silo.png">
                 <div class="addr">
                     <span class="loc"><strong>Orlando Skatepark</strong></span>
                     <address>
@@ -68,7 +74,7 @@
                 </div>
             </div>
             <div class="city col-sm-12 col-md-4 col-lg-4">
-                <img src="dist/img/city-silo.png">
+                <img src="<?php bloginfo('template_url'); ?>/dist/img/city-silo.png">
                 <div class="addr">
                     <span class="loc"><strong>Sharaden Skatepark</strong></span>
                     <address>

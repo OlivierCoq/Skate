@@ -24,6 +24,13 @@ function skate_theme_scripts() {
 add_action( 'wp_enqueue_scripts', 'skate_theme_scripts' );
 
 
+/*Navigation Menus:*/
+register_nav_menus(array(
+    'primary'   => __('Primary Menu'), 
+    'footer'    => __('Footer Menu'),
+));
+
+
 
 /**
  *My PHP script for sending the lead's information:

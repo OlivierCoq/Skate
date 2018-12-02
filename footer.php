@@ -17,10 +17,22 @@
 <footer id="footer">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-12">
+            <div class="col-8">
                 <div class="cont-foot-copy">
                     <p>&copy; <?php $curYear = date('Y '); echo $curYear; ?> | WordPress Theme developed by <a href="https://www.oliviercoq.online"><strong>OlivierCoq.Online</strong></a></p>
                 </div>
+            </div>
+            <div class="col-4">
+                <nav class="foot-nav">
+                    <?php 
+                
+                        $args = array(
+                            'theme_location' => 'footer'
+                        );
+                
+                    wp_nav_menu(  $args); 
+                    ?>
+                </nav>
             </div>
         </div>
     </div>
