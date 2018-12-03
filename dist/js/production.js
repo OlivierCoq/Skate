@@ -1490,7 +1490,7 @@ $(document).ready(function(){
      
     if ($('a').parent().hasClass('scroll')) {
         
-        $(this).on('click', function(ev) {
+        $('a').on('click', function(ev) {
           ev.preventDefault();
            
                var target = this.hash,
@@ -1502,7 +1502,7 @@ $(document).ready(function(){
            });
            
     } else {
-        $(this).unbind('click');
+        $('a').unbind('click');
     } 
         /*Scroll to Top Button*/
     $(window).scroll(function(){
