@@ -12,11 +12,10 @@
                 <h1>We Skate</h1>
             </div>
             <nav class="cont-nav">
-                <!--<ul>
+                <ul>
                     <li><a class="scroll" href="#why">Why We Skate</a></li>
                     <li><a class="scroll" href="#locations">Locations</a></li>
-                    <li><a href="#">Jr. Skaters</a></li>
-                </ul>-->
+                </ul>
                 <?php 
                 
                     $args = array(

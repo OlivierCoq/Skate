@@ -1488,9 +1488,8 @@ $(document).ready(function(){
     /*Scrolling*/
       // Add smooth scrolling to specific links
      
-    if ($('a').parent().hasClass('scroll')) {
-        
-        $('a').on('click', function(ev) {
+ 
+        $('a.scroll').on('click', function(ev) {
           ev.preventDefault();
            
                var target = this.hash,
@@ -1500,10 +1499,7 @@ $(document).ready(function(){
                    'scrollTop': $target.offset().top/* -70 //minus height of the navbar*/
                }, 900); 
            });
-           
-    } else {
-        $('a').unbind('click');
-    } 
+
         /*Scroll to Top Button*/
     $(window).scroll(function(){
         if ($(window).scrollTop() > 450) {
@@ -1512,7 +1508,7 @@ $(document).ready(function(){
              $("#scrollToTop").hide();
         } 
     }); 
-});     
+});      
 $(function(){
     
     $.validator.addMethod('nameLength', function(value,element) {
