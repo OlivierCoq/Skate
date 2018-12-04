@@ -12,10 +12,7 @@
                 <h1>We Skate</h1>
             </div>
             <nav class="cont-nav">
-                <ul>
-                    <li><a class="scroll" href="#why">Why We Skate</a></li>
-                    <li><a class="scroll" href="#locations">Locations</a></li>
-                </ul>
+
                 <?php 
                 
                     $args = array(
@@ -88,7 +85,7 @@
 </section>
 
 <!--Footer-->
-<!--
+
 <?php
 get_footer();
 ?>      
